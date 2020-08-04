@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="676d6504-cdd6-49db-acc5-a7f2d3477efa" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1fe6c0Wo1W15EfDQG0mpSl5Ry5n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.php.quality.tools" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="676d6504-cdd6-49db-acc5-a7f2d3477efa" name="Default Changelist" comment="" />
+      <created>1596566286931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596566286931</updated>
+      <workItem from="1596566288175" duration="592000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="542" y="186" width="824" height="691" key="#PHP_CodeSniffer" timestamp="1596566877835">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="542" y="186" width="824" height="691" key="#PHP_CodeSniffer/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1596566877835" />
+    <state x="737" y="276" width="424" height="518" key="FileChooserDialogImpl" timestamp="1596566705388">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="737" y="276" width="424" height="518" key="FileChooserDialogImpl/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1596566705388" />
+    <state x="773" y="452" width="363" height="154" key="NewPhpFileDialog" timestamp="1596566312994">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="773" y="452" width="363" height="154" key="NewPhpFileDialog/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1596566312994" />
+    <state x="456" y="160" width="1007" height="737" key="SettingsEditor" timestamp="1596566879761">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="456" y="160" width="1007" height="737" key="SettingsEditor/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1596566879761" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
