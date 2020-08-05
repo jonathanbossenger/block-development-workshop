@@ -54,21 +54,32 @@ add_shortcode( 'bdw_form_shortcode', 'bdw_form_shortcode' );
 function bdw_form_shortcode() {
 	ob_start();
 	?>
+	<style>
+		.bdw_form form div {
+			padding: 10px;
+		}
+		.bdw_form label{
+			display: inline-block;
+			width: 25%;
+		}
+	</style>
+	<div class="bdw_form">
 	<h1>Subscribe</h1>
-	<form method="post">
-		<input type="hidden" name="bdw_form" value="submit">
-		<div>
-			<label for="email">Email address</label>
-			<input type="text" id="email" name="email" placeholder="Email address">
-		</div>
-		<div>
-			<label for="name">Name</label>
-			<input type="text" id="name" name="name" placeholder="Name">
-		</div>
-		<div>
-			<input type="submit" id="submit" name="submit" value="Submit">
-		</div>
-	</form>
+		<form method="post">
+			<input type="hidden" name="bdw_form" value="submit">
+			<div>
+				<label for="email">Email address</label>
+				<input type="text" id="email" name="email" placeholder="Email address">
+			</div>
+			<div>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Name">
+			</div>
+			<div>
+				<input type="submit" id="submit" name="submit" value="Submit">
+			</div>
+		</form>
+	</div>
 	<?php
 	$form = ob_get_clean();
 	return $form;
@@ -86,14 +97,17 @@ function bdw_process_form() {
 	}
 	$bdw_form = $_POST['bdw_form']; //phpcs:ignore WordPress.Security.NonceVerification
 	if ( ! empty( $bdw_form ) && 'submit' === $bdw_form ) {
-		$email          = $_POST['email']; //phpcs:ignore WordPress.Security.NonceVerification
-		$name           = $_POST['name']; //phpcs:ignore WordPress.Security.NonceVerification
+		$email           = $_POST['email']; //phpcs:ignore WordPress.Security.NonceVerification
+		$name            = $_POST['name']; //phpcs:ignore WordPress.Security.NonceVerification
 		$subscriber_data = array(
 			'status'        => 'subscribed',
 			'name'          => $name,
-			'email_address' => $email,
+			'email' => $email,
 		);
-		$added = bdw_insert_subscriber( $subscriber_data );
+		$added           = bdw_insert_subscriber( $subscriber_data );
+		if ( $added ) {
+			wp_redirect( 'subscriber-added' );
+		}
 	}
 }
 
