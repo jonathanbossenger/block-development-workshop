@@ -1,12 +1,28 @@
-
 {
   "name": "block-development-workshop",
   "version": "0.1.0",
   "main": "Gruntfile.js",
   "author": "YOUR NAME HERE",
   "devDependencies": {
+    "@wordpress/scripts": "12.1.1",
     "grunt": "~0.4.5",
     "grunt-wp-i18n": "~0.5.0",
     "grunt-wp-readme-to-markdown": "~1.0.0"
-  }
+  },
+  "description": "GitHub repository for a beginner workshop to block development",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanbossenger/block-development-workshop.git"
+  },
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jonathanbossenger/block-development-workshop/issues"
+  },
+  "homepage": "https://github.com/jonathanbossenger/block-development-workshop#readme"
 }
