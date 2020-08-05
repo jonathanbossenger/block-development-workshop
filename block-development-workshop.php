@@ -135,7 +135,5 @@ function bdw_insert_subscriber( $subscriber_data ) {
 		return true;
 	}
 
-	bdw_error_log( 'Failed adding subscriber to database', $subscriber_data );
-
 	return false;
 }
