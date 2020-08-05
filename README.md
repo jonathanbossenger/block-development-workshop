@@ -7,3 +7,7 @@ Set up JavaScript build tools
 * Make sure npm is installed
 * Set up project, run `npm init`
 * Install required packages, run `npm install --save-dev --save-exact @wordpress/scripts`
+
+## Step two
+* Register the block file in PHP
+* Register the block in JavaScript
