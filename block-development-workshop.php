@@ -137,3 +137,20 @@ function bdw_insert_subscriber( $subscriber_data ) {
 
 	return false;
 }
+
+add_action( 'init', 'bdw_register_custom_block' );
+function bdw_register_custom_block() {
+	// automatically load dependencies and version
+	$asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php' );
+
+	wp_register_script(
+		'bdw_custom_block',
+		plugins_url( 'build/index.js', __FILE__ ),
+		$asset_file['dependencies'],
+		$asset_file['version']
+	);
+
+	register_block_type( 'block-workshop/custom-block', array(
+		'editor_script' => 'bdw_custom_block',
+	) );
+}
