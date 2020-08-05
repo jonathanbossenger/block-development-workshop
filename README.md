@@ -25,3 +25,6 @@ Set up JavaScript build tools
 * Run `npm install` to install dependencies
 * Run `npm run build` to build assets or `npm run start` to watch and build
 * (Tip) Make sure the block type registration is named correctly
+
+## Step three - adding some available components
+* Add a Rich Text component with some attributes (https://developer.wordpress.org/block-editor/tutorials/block-tutorial/introducing-attributes-and-editable-fields/)

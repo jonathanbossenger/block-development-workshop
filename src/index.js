@@ -1,6 +1,7 @@
 console.log('loaded');
 
 import { registerBlockType } from '@wordpress/blocks';
+import { RichText } from '@wordpress/block-editor';
 
 const blockStyle = {
 	backgroundColor: '#900',
@@ -12,11 +13,33 @@ registerBlockType( 'block-workshop/custom-block', {
 	title: 'Workshop Block',
 	icon: 'universal-access-alt',
 	category: 'design',
-	example: {},
-	edit() {
-		return <div style={ blockStyle }>Hello World, step 1 (from the editor).</div>;
+	attributes: {
+		content: {
+			type: 'array',
+			source: 'children',
+			selector: 'p',
+		},
 	},
-	save() {
-		return <div style={ blockStyle }>Hello World, step 1 (from the frontend).</div>;
+	example: {
+		attributes: {
+			content: 'Hello World',
+		},
+	},
+	edit: ( props ) => {
+		const { attributes: { content }, setAttributes, className } = props;
+		const onChangeContent = ( newContent ) => {
+			setAttributes( { content: newContent } );
+		};
+		return (
+			<RichText
+				tagName="p"
+				className={ className }
+				onChange={ onChangeContent }
+				value={ content }
+			/>
+		);
+	},
+	save: ( props ) => {
+		return <RichText.Content tagName="p" value={ props.attributes.content } />;
 	},
 } );
