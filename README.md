@@ -30,3 +30,7 @@ Set up JavaScript build tools
 * Add a Rich Text component with some attributes (https://developer.wordpress.org/block-editor/tutorials/block-tutorial/introducing-attributes-and-editable-fields/)
 * Add a custom attribute to be saved on the block (https://developer.wordpress.org/block-editor/developers/block-api/block-attributes/)
 * Add a new component to our custom block
+
+## Step four - adding your own custom component, or a combination of custom and existing components
+* Create a very simple new component for a special label
+* Replace the RichText component with this new component in our block
