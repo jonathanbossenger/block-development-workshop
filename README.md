@@ -34,3 +34,6 @@ Set up JavaScript build tools
 ## Step four - adding your own custom component, or a combination of custom and existing components
 * Create a very simple new component for a special label
 * Replace the RichText component with this new component in our block
+
+## Step five - combining components
+* Create a message component which combines the header and the rich text area
