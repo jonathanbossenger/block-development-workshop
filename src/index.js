@@ -1,19 +1,18 @@
 import {registerBlockType} from '@wordpress/blocks';
-import WorkshopMessage from "./Components/WorkshopMessage";
+import WorkshopMessageHeader from "./Components/WorkshopMessageHeader";
 
 registerBlockType('block-workshop/custom-block', {
 	title: 'Workshop Block',
 	icon: 'universal-access-alt',
 	category: 'design',
-	edit: () => {
-		/**
-		 * Return the WorkshopLabel Component
-		 */
+	edit: (props) => {
+		const {className} = props;
 		return (
-			<WorkshopMessage/>
+			<WorkshopMessageHeader className={className}/>
 		);
 	},
-	save: () => {
-		return <WorkshopMessage/>;
+	save: (props) => {
+		const {className} = props;
+		return <WorkshopMessageHeader className={className}/>;
 	},
 });
