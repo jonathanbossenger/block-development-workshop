@@ -37,3 +37,11 @@ Set up JavaScript build tools
 
 ## Step five - combining components
 * Create a message component which combines the header and the rich text area
+
+## Bonus - Real World Example
+* https://wordpress.org/plugins/seriously-simple-podcasting/
+
+## Resources
+* https://reactforbeginners.com/
+* https://javascriptforwp.com/product/gutenberg-block-development-course/
+* https://deliciousbrains.com/custom-gutenberg-block/
