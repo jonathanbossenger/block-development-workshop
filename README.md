@@ -9,7 +9,7 @@ GitHub repository for a beginner workshop to block development
 * Terminal access of some kind
 
 ## Step one
-Set up JavaScript build tools
+Set up JavaScript build tools - https://developer.wordpress.org/block-editor/tutorials/javascript/js-build-setup/
 * Make sure npm is installed
 * Set up project, run `npm init`
 * Install required packages, run `npm install --save-dev --save-exact @wordpress/scripts`
