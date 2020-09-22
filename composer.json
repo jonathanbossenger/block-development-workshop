@@ -1,0 +1,25 @@
+{
+  "name": "jonathan/block-development-workshop",
+  "authors": [
+    {
+      "name": "Jonathan Bossenger",
+      "email": "jonathanbossenger@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": false,
+  "repositories": [
+    {
+      "name": "jonathanbossenger/phpdocumentor",
+      "type": "path",
+      "url": "/home/jonathan/development/repositories/phpdocumentor",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "jonathanbossenger/phpdocumentor": "@dev"
+  }
+}
