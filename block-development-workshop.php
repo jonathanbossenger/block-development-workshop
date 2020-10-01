@@ -12,6 +12,8 @@
  * @package         Block_Development_Workshop
  */
 
+include 'vendor/autoload.php';
+
 function bdw_error_log( $message, $data = '' ) {
 	$file = trailingslashit( plugin_dir_path( __FILE__ ) ) . 'log/' . date( 'Y-m-d' ) . '.log';
 	if ( ! is_file( $file ) ) {
