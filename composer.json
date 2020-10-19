@@ -6,8 +6,20 @@
             "email": "jonathanbossenger@gmail.com"
         }
     ],
-    "require": {},
-    "require-dev": {
-        "phpdocumentor/reflection": " ~4.0"
+  "minimum-stability": "dev",
+  "prefer-stable": false,
+  "repositories": [
+    {
+      "name": "jonathanbossenger/reflection",
+      "type": "path",
+      "url": "/home/jonathan/development/repositories/reflection",
+      "options": {
+        "symlink": true
+      }
     }
+  ],
+  "require": {},
+  "require-dev": {
+    "jonathanbossenger/reflection": "@dev"
+  }
 }
