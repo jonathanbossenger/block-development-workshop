@@ -16,10 +16,19 @@
       "options": {
         "symlink": true
       }
+    },
+    {
+      "name": "jonathanbossenger/wp-phpdocumentor-reflection",
+      "type": "path",
+      "url": "/home/jonathan/development/repositories/wp-phpdocumentor-reflection",
+      "options": {
+        "symlink": true
+      }
     }
   ],
   "require": {},
   "require-dev": {
-    "jonathanbossenger/reflection": "@dev"
+    "jonathanbossenger/reflection": "@dev",
+    "jonathanbossenger/wp-phpdocumentor-reflection": "@dev"
   }
 }
